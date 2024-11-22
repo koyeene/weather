@@ -1,0 +1,156 @@
+@font-face {
+   font-family: 'Pretendard-Regular';
+   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* 전체 컨테이너 */
+.main-container {
+   font-family: 'Pretendard-Regular';
+   margin: 0;
+   padding: 0;
+   background-color: #f8f8f8;
+}
+
+/* 상단 헤더 */
+.header {
+   width: 100%;
+   height: 50px;
+   /* border: 1px solid red; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #4a90e2;
+   padding: 10px 20px;
+   color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin: 0 auto;
+}
+
+/* 햄버거 */
+.hamburger-menu {
+   /* border: 1px solid red; */
+   margin-right: 100px;
+   display: flex;
+   flex-direction: column;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+   color: #333;
+   font-size: 18px;
+   padding: 5px;
+   position: absolute;
+   top: 50px;
+   right: 20px;
+   background-color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   border-radius: 8px;
+   overflow: hidden;
+   margin-right: 50px;
+}
+
+.dropdown-menu div {
+   padding: 10px 20px;
+   cursor: pointer;
+   border-bottom: 1px solid #f0f0f0;
+   transition: background-color 0.3s ease;
+}
+
+.dropdown-menu div:last-child {
+   border-bottom: none;
+}
+
+.dropdown-menu div:hover {
+   background-color: #f0f0f0;
+}
+
+/* 메인 콘텐츠 */
+.content {
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   padding: 20px;
+}
+
+.temperature1 {
+   font-size: 100px;
+   font-weight: bold;
+   margin: 10px 0;
+}
+
+.subtitle {
+   font-size: 1.2rem;
+   color: #666;
+   margin-bottom: 30px;
+}
+
+/* 카드 컨테이너 */
+.card-container {
+   margin-top: 100px;
+   margin-bottom: 100px;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+   flex-wrap: wrap;
+}
+
+.card {
+   width: 200px;
+   height: 250px;
+   background-color: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   font-weight: bold;
+   color: #333;
+   transition: transform 0.3s ease;
+}
+
+.card:hover {
+   transform: scale(1.05);
+   border: 3px solid #4a90e2;
+}
+
+/* 아이콘 영역 */
+.card-icon {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+/* 아이콘 크기 설정 */
+.card-icon svg {
+   width: 80px;
+   height: 80px;
+}
+
+/* 날씨 아이콘 영역 */
+.weather-icon {
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+/* 검색창 스타일 */
+.SearchBar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px 0;
+   padding: 10px;
+}
+
+/* TextField 스타일 */
+.SearchBar .MuiTextField-root {
+   width: 100%;
+   max-width: 620px;
+   border-radius: 8px;
+}

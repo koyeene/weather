@@ -1,0 +1,201 @@
+@font-face {
+   font-family: 'Pretendard-Regular';
+   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* 전체 컨테이너 */
+.main-container {
+   font-family: 'Pretendard-Regular';
+   margin: 0;
+   padding: 0;
+   background-color: #f8f8f8;
+}
+
+/* 상단 헤더 */
+.header {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #4a90e2;
+   padding: 10px 20px;
+   color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin: 0 auto;
+}
+
+/* 햄버거 메뉴  */
+.hamburger-menu {
+   z-index: 10;
+   flex-direction: column;
+}
+
+/* 드롭다운 메뉴 */
+.menu-dropdown {
+   font-family: 'Pretendard-Regular';
+   font-weight: bold;
+   color: #333;
+   font-size: 18px;
+   padding: 5px;
+   top: 80px;
+   right: 20px;
+   background-color: white;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   border-radius: 8px;
+   overflow: hidden;
+   z-index: 100;
+   position: absolute;
+}
+
+.menu-item {
+   padding: 10px 20px;
+   cursor: pointer;
+   border-bottom: 1px solid #f0f0f0;
+   transition: background-color 0.3s ease;
+}
+
+.menu-item:last-child {
+   border-bottom: none;
+}
+
+.menu-item:hover {
+   background-color: #f0f0f0;
+}
+
+/* 카드 섹션 스타일 */
+.card-section2 {
+   display: flex;
+   margin: 20px auto;
+   gap: 20px;
+   padding: 20px;
+   justify-content: center;
+}
+
+/* 카드 스타일 */
+.card2 {
+   width: 350px;
+   height: 200px;
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+   padding-top: 50px;
+   text-align: center;
+   font-size: 18px;
+}
+
+.card2 svg {
+   margin-bottom: 20px;
+}
+
+.card2 p {
+   font-size: 16px;
+   margin: 0;
+   color: #333;
+}
+
+.card3 {
+   width: 300px;
+   height: 400px;
+   background-color: #ffffff;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   margin-top: -150px;
+}
+
+.temperature {
+   font-size: 80px !important;
+   margin-top: 100px;
+   margin-bottom: 10px;
+}
+
+.main-title {
+   margin-bottom: 10px;
+}
+
+.description {
+   margin-top: 10px;
+}
+
+.content2 {
+   width: 1040px;
+   height: 100%;
+   margin: 0 auto;
+   /* text-align: center; */
+   padding: 20px;
+}
+
+/* 3번째 div */
+.weather-card-content {
+   text-align: center;
+   margin-top: 50px;
+}
+
+.weather-card-content {
+   padding: 20px;
+}
+
+.icon-text-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-bottom: 10px;
+}
+
+.weather-card-content h3 {
+   margin-bottom: 20px;
+   margin-top: 50px;
+}
+
+/* 슬라이더 컨테이너 */
+.weather-slider {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+}
+
+/* 슬라이더 내부 */
+.slider-content {
+   margin-top: 70px;
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+   width: calc(100% * 5);
+}
+
+/* 각 슬라이드 */
+.weather-card {
+   min-width: 100%;
+   box-sizing: border-box;
+   text-align: center;
+   padding: 20px;
+}
+
+/* 슬라이더 버튼...
+ */
+button.prev,
+button.next {
+   position: absolute;
+   top: 170px;
+   font-size: 22px;
+   color: #333;
+   background: white;
+   border: 1px solid white;
+   padding: 10px;
+   cursor: pointer;
+}
+
+button.prev {
+   left: 10px;
+}
+
+button.next {
+   right: 10px;
+}
